@@ -23,11 +23,6 @@ const News: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">News</IonTitle>
-          </IonToolbar>
-        </IonHeader>
         <IonList className="list-news">
           {news.map(m => <NewsListItem key={Date.now() + m.id} news={m} />)}
         </IonList>

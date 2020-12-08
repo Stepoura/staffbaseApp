@@ -12,13 +12,6 @@ const Home: React.FC = () => {
       </IonToolbar>
     </IonHeader>
     <IonContent fullscreen>
-      <IonHeader collapse="condense">
-        <IonToolbar>
-          <IonTitle size="large">
-            Home
-          </IonTitle>
-        </IonToolbar>
-      </IonHeader>
       <div className="home-main">
         <div className="home-main-header">
           <h2>Welcome to the Staffbase Bootcamp App</h2>

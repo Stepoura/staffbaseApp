@@ -17,11 +17,6 @@ const Contact: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Contact</IonTitle>
-          </IonToolbar>
-        </IonHeader>
         <div className="contact-container">
           <form action="someBackendEndpoint">
             <label htmlFor="fname">First Name</label>
