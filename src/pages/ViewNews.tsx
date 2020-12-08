@@ -24,7 +24,7 @@ const ViewNews: React.FC<ViewNewsProps> = ({ match }) => {
   const [news, setNews] = useState<SingleNews>();
 
   useIonViewWillEnter(() => {
-    const msg = getNews(parseInt(match.params.id, 10));
+    const msg = getNews(parseInt(match.params.id));
     setNews(msg);
   });
 
