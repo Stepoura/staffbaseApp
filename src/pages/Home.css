@@ -1,0 +1,12 @@
+.home-main{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+}
+
+.home-main-header{
+    text-align: center;
+}

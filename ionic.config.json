@@ -1,0 +1,7 @@
+{
+  "name": "staffbasetestapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
