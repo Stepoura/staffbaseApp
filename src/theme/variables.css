@@ -230,3 +230,11 @@ http://ionicframework.com/docs/theming/ */
     --ion-card-background: #1e1e1e;
   }
 }
+
+.logo-img-staffbase{
+  width: 110px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+}

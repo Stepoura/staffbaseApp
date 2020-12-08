@@ -1,5 +1,5 @@
 import React , { useState }from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, useIonViewWillEnter} from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, useIonViewWillEnter, IonImg} from '@ionic/react';
 import './News.css';
 import NewsListItem from '../components/NewsListItem';
 import { getAllNews, SingleNews } from '../newsData/newsItems';
@@ -19,6 +19,7 @@ const News: React.FC = () => {
       <IonHeader>
         <IonToolbar>
           <IonTitle>News</IonTitle>
+          <IonImg className="logo-img-staffbase" src="https://s15952.pcdn.co/wp-content/themes/staffbase-theme/img/staffbase_logo.png"></IonImg>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

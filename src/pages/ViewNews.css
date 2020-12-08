@@ -1,6 +1,16 @@
 #view-message-page ion-item {
   --inner-padding-end: 0;
   --background: transparent;
+
+}
+.ion-item-wrap{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ion-content-wrap{
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #view-message-page ion-label {

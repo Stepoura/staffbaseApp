@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonImg, IonButton } from '@ionic/react';
 import './Contact.css';
 
 const Contact: React.FC = () => {
@@ -8,6 +8,7 @@ const Contact: React.FC = () => {
       <IonHeader>
         <IonToolbar>
           <IonTitle>Contact</IonTitle>
+          <IonImg className="logo-img-staffbase" src="https://s15952.pcdn.co/wp-content/themes/staffbase-theme/img/staffbase_logo.png"></IonImg>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -24,7 +25,7 @@ const Contact: React.FC = () => {
             <input type="text" id="lname" name="lastname" placeholder="Your last name"></input>
             <label htmlFor="subject">Subject</label>
             <textarea id="subject" name="subject" placeholder="Your subject"></textarea>
-            <input type="submit" value="Submit"></input>
+            <IonButton className="btn-submit">Submit</IonButton>
           </form>
         </div>
       </IonContent>

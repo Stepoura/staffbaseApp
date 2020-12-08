@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar} from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonImg} from '@ionic/react';
 import './Home.css';
 const Home: React.FC = () => {
 
@@ -8,6 +8,7 @@ const Home: React.FC = () => {
     <IonHeader>
       <IonToolbar>
         <IonTitle>Home</IonTitle>
+        <IonImg className="logo-img-staffbase" src="https://s15952.pcdn.co/wp-content/themes/staffbase-theme/img/staffbase_logo.png"></IonImg>
       </IonToolbar>
     </IonHeader>
     <IonContent fullscreen>
