@@ -7,8 +7,8 @@ export interface SingleNews {
   
   const news: SingleNews[] = [
     {
-      fromName: 'Nils Wendler',
-      subject: 'Hi, my Name is Nils',
+      fromName: 'Staffbase Admin',
+      subject: 'News #1',
       date: '2:32 AM',
       id: 0
     },

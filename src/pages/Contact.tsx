@@ -1,8 +1,13 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonImg, IonButton } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonImg, IonButton  } from '@ionic/react';
 import './Contact.css';
 
 const Contact: React.FC = () => {
+
+  const submitMessage = async () => {
+    alert("Can't reach server!");
+  };
+
   return (
     <IonPage>
       <IonHeader>
@@ -25,7 +30,7 @@ const Contact: React.FC = () => {
             <input type="text" id="lname" name="lastname" placeholder="Your last name"></input>
             <label htmlFor="subject">Subject</label>
             <textarea id="subject" name="subject" placeholder="Your subject"></textarea>
-            <IonButton className="btn-submit">Submit</IonButton>
+            <IonButton onClick={() => submitMessage()} className="btn-submit">Submit</IonButton>
           </form>
         </div>
       </IonContent>
