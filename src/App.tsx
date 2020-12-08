@@ -14,6 +14,7 @@ import { newspaperOutline, homeOutline, peopleOutline } from 'ionicons/icons';
 import Home from './pages/Home';
 import News from './pages/News';
 import Contacts from './pages/Contact';
+import ViewNews from './pages/ViewNews';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -39,6 +40,7 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
+          <Route path="/newsItems/:id" component={ViewNews} exact={true} />
           <Route path="/Home" component={Home} exact={true} />
           <Route path="/News" component={News} exact={true} />
           <Route path="/Contact" component={Contacts} />

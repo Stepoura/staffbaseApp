@@ -1,16 +1,16 @@
 import React , { useState }from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, useIonViewWillEnter} from '@ionic/react';
 import './News.css';
-import MessageListItem from '../components/MessageListItem';
-import { Message, getMessages } from '../newsData/messages';
+import NewsListItem from '../components/NewsListItem';
+import { getAllNews, SingleNews } from '../newsData/newsItems';
 
 const News: React.FC = () => {
 
-  const [messages, setMessages] = useState<Message[]>([]);
+  const [news, setNews] = useState<SingleNews[]>([]);
 
   useIonViewWillEnter(() => {
-    const msgs = getMessages();
-    setMessages(msgs);
+    const msgs = getAllNews();
+    setNews(msgs);
   });
 
 
@@ -28,7 +28,7 @@ const News: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <IonList>
-          {messages.map(m => <MessageListItem key={m.id} message={m} />)}
+          {news.map(m => <NewsListItem key={Date.now() + m.id} news={m} />)}
         </IonList>
       </IonContent>
     </IonPage>

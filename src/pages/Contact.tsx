@@ -19,11 +19,11 @@ const Contact: React.FC = () => {
         <div className="contact-container">
           <form action="someBackendEndpoint">
             <label htmlFor="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name.."></input>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name"></input>
             <label htmlFor="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name.."></input>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name"></input>
             <label htmlFor="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+            <textarea id="subject" name="subject" placeholder="Your subject"></textarea>
             <input type="submit" value="Submit"></input>
           </form>
         </div>
