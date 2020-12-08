@@ -14,7 +14,7 @@ const Home: React.FC = () => {
       <IonHeader collapse="condense">
         <IonToolbar>
           <IonTitle size="large">
-            Inbox
+            Home
           </IonTitle>
         </IonToolbar>
       </IonHeader>
